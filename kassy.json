@@ -1,0 +1,5 @@
+﻿{
+  "name": "lmgtfy",
+  "version": 1.0,
+  "startup": "lmgtfy.js"
+}
