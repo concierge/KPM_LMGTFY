@@ -1,5 +1,9 @@
 ﻿{
   "name": "lmgtfy",
-  "version": 1.0,
-  "startup": "lmgtfy.js"
+  "version": 1.1,
+  "startup": "lmgtfy.js",
+  "command": "lmgtfy",
+  "help": [
+    [ "{{commandPrefix}}lmgtfy", "Googles something for lazy people.", "Only a lazy person can't google. Lazy people like you. Therefore this will do it for you." ]
+  ]
 }
