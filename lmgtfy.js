@@ -6,9 +6,8 @@
  */
 
 exports.run = (api, event) => {
-    const text = event.arguments_body;
-	if (!text) {
+    if (!event.arguments_body) {
 		return api.sendMessage('You need to provide me with something to google.', event.thread_id);
 	}
-    api.sendUrl(`http://lmgtfy.com/?q=${encodeURIComponent(text)}`, event.thread_id);
+    api.sendUrl(`http://lmgtfy.com/?q=${encodeURIComponent(event.arguments_body)}`, event.thread_id);
 };
